@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2" >
+     <TextView 
+           android:layout_width="fill_parent"
+    	   android:layout_height="wrap_content"
+    	   android:layout_weight="2"
+    	   android:text="選擇號碼對號"
+    	   android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="14pt"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:id="@+id/txt_title_layout"
+     	/> 
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_above="@+id/bottom_panel"
+    android:layout_below="@+id/txt_title_layout"
+    >
+    <GridView 
+    android:id="@+id/grid_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:numColumns="auto_fit"
+    android:columnWidth="30dp"
+    android:horizontalSpacing="1dp"
+    android:verticalSpacing="1dp"
+    android:gravity="center"
+    android:stretchMode="columnWidth"
+    android:layout_weight="10"
+     >  
+    </GridView>
+    <TextView 
+    android:id="@+id/number_text"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="3"
+    android:text="drag and drop here"
+     />  
+    
+    </LinearLayout> 
+     <ImageView
+         android:id="@+id/bottom_panel"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:src="@drawable/buttom_icon_t"
+         
+         />
+</RelativeLayout>

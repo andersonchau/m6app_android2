@@ -1,0 +1,27 @@
+06-30 10:09:21.479: E/SQLiteLog(1435): (1) no such table: COMPANY
+06-30 10:09:21.498: W/dalvikvm(1435): threadid=12: thread exiting with uncaught exception (group=0x40a71930)
+06-30 10:09:21.823: E/AndroidRuntime(1435): FATAL EXCEPTION: AsyncTask #2
+06-30 10:09:21.823: E/AndroidRuntime(1435): java.lang.RuntimeException: An error occured while executing doInBackground()
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at java.lang.Thread.run(Thread.java:856)
+06-30 10:09:21.823: E/AndroidRuntime(1435): Caused by: android.database.sqlite.SQLiteException: no such table: COMPANY (code 1): , while compiling: DELETE FROM COMPANY
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:882)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:493)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1663)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1594)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at com.example.m6apps.M6ResultDatabaseHandler.removeAllM6Records(M6ResultDatabaseHandler.java:63)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at com.example.m6apps.StatisticsActivity$QueryM6HistoryTask.doInBackground(StatisticsActivity.java:172)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at com.example.m6apps.StatisticsActivity$QueryM6HistoryTask.doInBackground(StatisticsActivity.java:1)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+06-30 10:09:21.823: E/AndroidRuntime(1435): 	... 4 more
